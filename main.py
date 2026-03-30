@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-PyForex — Visualiseur graphique de paires Forex en chandeliers japonais.
+Pypirex — Visualiseur graphique de paires Forex en chandeliers japonais.
 
 Utilisation directe :
     python main.py
 
 Via pip (après installation) :
-    pip install pyforex
-    pyforex
+    pip install pypirex
+    pypirex
 
 Dépendances (sans pip install) :
     pip install -r requirements.txt

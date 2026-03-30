@@ -1,6 +1,6 @@
 """
 Point d'entrée pour :
-  - la commande CLI : pyforex
+  - la commande CLI : pypirex
   - l'exécution en module : python -m forex_app
 """
 

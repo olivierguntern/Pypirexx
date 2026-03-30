@@ -50,7 +50,7 @@ class ForexApp(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        self.title("PyForex  —  Graphiques Forex en Chandeliers Japonais")
+        self.title("Pypirex  —  Graphiques Forex en Chandeliers Japonais")
         self.geometry("1440x900")
         self.minsize(1000, 680)
         self.configure(bg=THEME["bg"])
@@ -127,9 +127,9 @@ class ForexApp(tk.Tk):
         # Logo
         logo_frame = tk.Frame(header, bg=THEME["bg_panel"])
         logo_frame.pack(side=tk.LEFT, padx=16, pady=8)
-        tk.Label(logo_frame, text="Py",    font=("Helvetica", 22, "bold"),
+        tk.Label(logo_frame, text="Pypi",  font=("Helvetica", 22, "bold"),
                  bg=THEME["bg_panel"], fg=THEME["accent"]).pack(side=tk.LEFT)
-        tk.Label(logo_frame, text="Forex", font=("Helvetica", 22, "bold"),
+        tk.Label(logo_frame, text="rex",   font=("Helvetica", 22, "bold"),
                  bg=THEME["bg_panel"], fg=THEME["text"]).pack(side=tk.LEFT)
 
         tk.Label(header, text="Visualiseur de chandeliers japonais",

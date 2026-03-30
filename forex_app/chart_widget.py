@@ -88,7 +88,7 @@ class ChartWidget(tk.Frame):
 
         tk.Label(
             self._placeholder,
-            text="PyForex",
+            text="Pypirex",
             font=("Helvetica", 32, "bold"),
             bg=THEME["bg"],
             fg=THEME["accent"],

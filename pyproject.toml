@@ -7,9 +7,9 @@ build-backend = "hatchling.build"
 # ---------------------------------------------------------------------------
 
 [project]
-name = "pyforex"
+name = "pypirex"
 version = "1.0.0"
-description = "Visualiseur graphique de paires Forex en chandeliers japonais (candlestick charts)"
+description = "Pypirex — Visualiseur graphique de paires Forex en chandeliers japonais (candlestick charts)"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
@@ -44,7 +44,7 @@ dependencies = [
 # ---------------------------------------------------------------------------
 
 [project.scripts]
-pyforex = "forex_app.__main__:main"
+pypirex = "forex_app.__main__:main"
 
 # ---------------------------------------------------------------------------
 # Configuration de hatchling (build backend)
