@@ -1,0 +1,29 @@
+# Build / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# Hatch / pip
+.hatch/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Matplotlib cache
+.matplotlib/

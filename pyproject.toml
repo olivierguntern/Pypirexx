@@ -1,0 +1,64 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# ---------------------------------------------------------------------------
+# Métadonnées du projet
+# ---------------------------------------------------------------------------
+
+[project]
+name = "pyforex"
+version = "1.0.0"
+description = "Visualiseur graphique de paires Forex en chandeliers japonais (candlestick charts)"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "PyForex" },
+]
+keywords = [
+    "forex", "trading", "candlestick", "chandelier",
+    "chart", "finance", "currency", "yfinance",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Environment :: X11 Applications",
+    "Intended Audience :: Financial and Insurance Industry",
+]
+dependencies = [
+    "yfinance>=0.2.28",
+    "mplfinance>=0.12.9b7",
+    "matplotlib>=3.7.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+]
+
+# ---------------------------------------------------------------------------
+# Commande CLI installée par pip
+# ---------------------------------------------------------------------------
+
+[project.scripts]
+pyforex = "forex_app.__main__:main"
+
+# ---------------------------------------------------------------------------
+# Configuration de hatchling (build backend)
+# ---------------------------------------------------------------------------
+
+[tool.hatch.build.targets.wheel]
+# Seul le package forex_app est inclus dans la wheel
+packages = ["forex_app"]
+
+[tool.hatch.build.targets.sdist]
+# Inclure également main.py et requirements.txt dans la source distribution
+include = [
+    "forex_app/",
+    "main.py",
+    "requirements.txt",
+    "LICENSE",
+]
